@@ -16,13 +16,13 @@ document.addEventListener("keypress",function(){
 });
 
 function gameFlash(btn){
-    btn.classList.add("flash"); // <-------try by adding dot to like .flash
+    btn.classList.add("flash"); 
     setTimeout(function(){
         btn.classList.remove("flash");
     },250);
 }
 function userFlash(btn){
-    btn.classList.add("user-flash"); // <-------try by adding dot to like .flash
+    btn.classList.add("user-flash"); 
     setTimeout(function(){
         btn.classList.remove("user-flash");
     },250);
@@ -42,8 +42,7 @@ function levelUp(){
 }
 
 function checkAns(idx){
-    // console.log("Current Level : ",level);
-    if(userSeq[idx] === gameSeq[idx]){ // <------ Try it with ==
+    if(userSeq[idx] === gameSeq[idx]){ 
         if(userSeq.length == gameSeq.length){
             setTimeout(levelUp,1000);
         }
